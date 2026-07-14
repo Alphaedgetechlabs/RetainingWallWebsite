@@ -1,0 +1,1 @@
+import SuburbFAQSection from "@/components/shared/SuburbFAQSection";const HastingsFAQSection = () => <SuburbFAQSection suburbName="Hastings" />;export default HastingsFAQSection;

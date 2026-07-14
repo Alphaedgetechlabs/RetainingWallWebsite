@@ -1,0 +1,10 @@
+[
+  { "name": "Sydney", "slug": "sydney", "state": "NSW" },
+  { "name": "Melbourne", "slug": "melbourne", "state": "VIC" },
+  { "name": "Brisbane", "slug": "brisbane", "state": "QLD" },
+  { "name": "Perth", "slug": "perth", "state": "WA" },
+  { "name": "Adelaide", "slug": "adelaide", "state": "SA" },
+  { "name": "Canberra", "slug": "canberra", "state": "ACT" },
+  { "name": "Hobart", "slug": "hobart", "state": "TAS" },
+  { "name": "Darwin", "slug": "darwin", "state": "NT" }
+]

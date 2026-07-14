@@ -1,0 +1,1 @@
+import SuburbFenceTypes from "@/components/shared/SuburbFenceTypes";const HamptonParkFenceTypes = () => <SuburbFenceTypes suburbName="Hampton Park" />;export default HamptonParkFenceTypes;

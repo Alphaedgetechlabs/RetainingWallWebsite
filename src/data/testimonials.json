@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Samantha",
+    "location": "Sydney, NSW",
+    "rating": 5,
+    "text": "Such a smooth and easy process! Three quotes arrived almost instantly, and the contractor I picked did a flawless job. My new Colorbond retaining wall looks stunning — I'm absolutely thrilled!",
+    "project": "Colorbond Retaining Wall – 32m"
+  },
+  {
+    "name": "Mark",
+    "location": "Melbourne, VIC",
+    "rating": 5,
+    "text": "Super impressed! The quotes were spot-on, and the contractor I chose was fantastic from day one. They finished earlier than promised, and the retaining wall looks perfect. Highly recommended!",
+    "project": "Timber Retaining Wall – 46m"
+  },
+  {
+    "name": "James",
+    "location": "Brisbane, QLD",
+    "rating": 5,
+    "text": "Fantastic experience! Comparing quotes was so easy, and I got a much better price than I thought I would. The workmanship was outstanding. The job truly exceeded my expectations.",
+    "project": "Glass Panel Retaining Wall – 35m"
+  },
+  {
+    "name": "Jessica",
+    "location": "Sydney, NSW",
+    "rating": 5,
+    "text": "Such a professional experience. Communication was excellent, and the online quote system made things incredibly simple — no more calling around for prices. Highly recommend!",
+    "project": "Aluminium Slat Retaining Wall – 31m"
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "tradeSlug": "retaining-walls",
+  "brandName": "QuoteMyRetainingWall",
+  "domain": "quotemyretainingwall.com.au",
+  "url": "https://quotemyretainingwall.com.au",
+  "quoteUrl": "/quote",
+  "phone": "0481 752 344",
+  "phoneHref": "tel:0481752344",
+  "email": "info@quotemyretainingwall.com.au",
+  "primaryOffer": "Get 3 free retaining wall quotes in minutes",
+  "trustMessage": "Verified, top-rated retaining wall contractors only",
+  "primaryCtaText": "Get Free Quotes",
+  "primaryCtaDestination": "/quote",
+  "heroHeadline": "Get Free Retaining Wall Quotes in Minutes",
+  "heroSubheadline": "Compare Prices & Save on Your Retaining Wall Installation — only verified, top-rated retaining wall contractors quote on your job.",
+  "trustBadge": "Australia's #1 Retaining Wall Quote Platform — Quotes Within Minutes.",
+  "stats": {
+    "suburbsCovered": "10,000+",
+    "customerRating": "4.82★",
+    "wallsQuoted": "8,500+"
+  },
+  "seo": {
+    "siteName": "QuoteMyRetainingWall",
+    "defaultTitle": "QuoteMyRetainingWall: Australia's #1 Retaining Wall Quote Platform — Get 3 Free Quotes in Minutes",
+    "defaultDescription": "Get 3 free retaining wall quotes from verified, top-rated contractors in your area. Compare prices and save on your retaining wall installation. 100% free, no obligation.",
+    "ogImage": "/og-image.png"
+  },
+  "organization": {
+    "name": "QuoteMyRetainingWall",
+    "legalName": "QuoteMyRetainingWall Pty Ltd",
+    "foundingDate": "2024",
+    "areaServed": "Australia",
+    "description": "Australia's leading platform for connecting homeowners with trusted retaining wall contractors."
+  }
+}

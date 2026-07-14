@@ -1,0 +1,42 @@
+import { useEffect } from "react";
+import Header from "@/components/Header";
+import CroydonHeroSection from "@/components/croydon/CroydonHeroSection";
+import CroydonHowItWorks from "@/components/croydon/CroydonHowItWorks";
+import CroydonFenceTypes from "@/components/croydon/CroydonFenceTypes";
+import ReviewsSection from "@/components/ReviewsSection";
+import CroydonFAQSection from "@/components/croydon/CroydonFAQSection";
+import Footer from "@/components/Footer";
+
+const QUOTE_URL = "/quote";
+
+const MelbourneCroydon = () => {
+  useEffect(() => {
+    document.title = "Croydon Retaining Wall Quotes — Get 3 Free Quotes in Minutes";
+  }, []);
+
+  const handleQuoteClick = () => {
+    window.location.href = QUOTE_URL;
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header onQuoteClick={handleQuoteClick} />
+      <main>
+        <CroydonHeroSection />
+        <CroydonHowItWorks onQuoteClick={handleQuoteClick} />
+        <div id="fence-types">
+          <CroydonFenceTypes onQuoteClick={handleQuoteClick} />
+        </div>
+        <div id="reviews">
+          <ReviewsSection />
+        </div>
+        <div id="faq">
+          <CroydonFAQSection onQuoteClick={handleQuoteClick} />
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default MelbourneCroydon;

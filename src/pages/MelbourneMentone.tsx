@@ -1,0 +1,31 @@
+import Header from "@/components/Header";
+import MentoneHeroSection from "@/components/mentone/MentoneHeroSection";
+import MentoneHowItWorks from "@/components/mentone/MentoneHowItWorks";
+import MentoneFenceTypes from "@/components/mentone/MentoneFenceTypes";
+import ReviewsSection from "@/components/ReviewsSection";
+import MentoneFAQSection from "@/components/mentone/MentoneFAQSection";
+import Footer from "@/components/Footer";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+
+const QUOTE_URL = "/quote";
+
+const MelbourneMentone = () => {
+  useDocumentTitle("Mentone Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
+  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header onQuoteClick={handleQuoteClick} />
+      <main>
+        <MentoneHeroSection />
+        <MentoneHowItWorks />
+        <div id="fence-types"><MentoneFenceTypes /></div>
+        <div id="reviews"><ReviewsSection /></div>
+        <div id="faq"><MentoneFAQSection /></div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default MelbourneMentone;

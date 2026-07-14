@@ -1,0 +1,123 @@
+[
+  {
+    "id": "colorbond",
+    "name": "Concrete Sleeper Retaining Wall",
+    "slug": "colorbond-fencing",
+    "description": "Durable, modern retaining walls using concrete sleepers and steel posts. Perfect for Australian conditions.",
+    "features": ["Long lifespan", "Termite resistant", "Low maintenance", "Multiple finish options"],
+    "price": "$250/m²",
+    "popular": true,
+    "showInNav": true,
+    "showInFooter": true
+  },
+  {
+    "id": "timber",
+    "name": "Timber Sleeper Retaining Wall",
+    "slug": "timber-fencing",
+    "description": "A natural look for garden and boundary retaining walls using treated timber options.",
+    "features": ["Natural appearance", "Cost effective", "Easy to repair", "Customisable"],
+    "price": "$180/m²",
+    "popular": false,
+    "showInNav": true,
+    "showInFooter": true
+  },
+  {
+    "id": "pool",
+    "name": "Block Retaining Wall",
+    "slug": "pool-fencing",
+    "description": "Interlocking block systems for strong, tidy retaining wall finishes.",
+    "features": ["Interlocking system", "Uniform finish", "Strong structure", "Multiple styles"],
+    "price": "$220/m²",
+    "popular": false,
+    "showInNav": true,
+    "showInFooter": false
+  },
+  {
+    "id": "aluminium",
+    "name": "Stone & Sandstone Retaining Wall",
+    "slug": "aluminium-fencing",
+    "description": "Premium natural stone options for high-end landscaping and terraces.",
+    "features": ["Premium finish", "Natural materials", "High-end appeal", "Long lasting"],
+    "price": "$350/m²",
+    "popular": false,
+    "showInNav": true,
+    "showInFooter": true
+  },
+  {
+    "id": "feature",
+    "name": "Gabion Retaining Wall",
+    "slug": "feature-fencing",
+    "description": "Rock-filled cages for drainage-friendly, contemporary retaining walls.",
+    "features": ["Drainage friendly", "Contemporary look", "Eco-friendly", "Durable structure"],
+    "price": "$280/m²",
+    "popular": false,
+    "showInNav": false,
+    "showInFooter": true
+  },
+  {
+    "id": "repairs",
+    "name": "Retaining Wall Repairs",
+    "slug": "fence-repairs",
+    "description": "Fix leaning, cracking, or failing walls; improve drainage to prevent repeat issues.",
+    "features": ["Crack repair", "Drainage fix", "Wall stabilisation", "Full restoration"],
+    "price": "From $150",
+    "popular": false,
+    "showInNav": false,
+    "showInFooter": true
+  },
+  {
+    "id": "glass",
+    "name": "Engineered Retaining Wall",
+    "slug": "glass-fencing",
+    "description": "Solutions for taller walls, tricky sites, and higher loads (engineering as needed).",
+    "features": ["Certified engineering", "High load capacity", "Complex site solutions", "Council compliant"],
+    "price": "$400/m²",
+    "popular": false,
+    "showInNav": false,
+    "showInFooter": false
+  },
+  {
+    "id": "chain-link",
+    "name": "Retaining Wall Replacement & Removal",
+    "slug": "chain-link-fencing",
+    "description": "Remove old walls and rebuild with a safer, longer-lasting retaining wall system.",
+    "features": ["Old wall removal", "Site cleanup", "New wall build", "Waste disposal"],
+    "price": "From $200",
+    "popular": false,
+    "showInNav": false,
+    "showInFooter": false
+  },
+  {
+    "id": "security",
+    "name": "Security Retaining Wall",
+    "slug": "security-fencing",
+    "description": "High-security retaining wall solutions for commercial and residential properties.",
+    "features": ["Reinforced design", "Heavy-duty materials", "Access control", "Commercial grade"],
+    "price": "$320/m²",
+    "popular": false,
+    "showInNav": false,
+    "showInFooter": false
+  },
+  {
+    "id": "steel",
+    "name": "Steel Retaining Wall",
+    "slug": "steel-fencing",
+    "description": "Strong and durable steel retaining wall for maximum strength and longevity.",
+    "features": ["Maximum strength", "Long lifespan", "Weather resistant", "Customisable"],
+    "price": "$300/m²",
+    "popular": false,
+    "showInNav": false,
+    "showInFooter": false
+  },
+  {
+    "id": "gate",
+    "name": "Retaining Wall + Fence Combo",
+    "slug": "gate-installation",
+    "description": "Integrated retaining wall and fence solutions for a seamless, cost-effective finish.",
+    "features": ["Integrated design", "Cost effective", "Seamless finish", "Custom options"],
+    "price": "From $350",
+    "popular": false,
+    "showInNav": false,
+    "showInFooter": false
+  }
+]
