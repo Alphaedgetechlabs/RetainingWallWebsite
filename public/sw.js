@@ -1,5 +1,6 @@
-const CACHE_NAME = 'quotemyretainingwall-v1';
-const STATIC_CACHE = 'quotemyretainingwall-static-v1';
+// Bump these whenever branding/jobType lock changes so stale JS isn't served.
+const CACHE_NAME = 'quotemyretainingwall-v2';
+const STATIC_CACHE = 'quotemyretainingwall-static-v2';
 
 // Assets to pre-cache on install
 const PRECACHE_ASSETS = [

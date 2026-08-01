@@ -48,10 +48,19 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         brand: {
+          DEFAULT: "#e87a4d",
+          light: "#fff7ed",
+          muted: "#ffc0a3",
+          track: "#fde8d8",
           orange: "hsl(var(--brand-orange))",
           "orange-light": "hsl(var(--brand-orange-light))",
           dark: "hsl(var(--brand-dark))",
           gray: "hsl(var(--brand-gray))",
+        },
+        navy: {
+          DEFAULT: "#1a2744",
+          light: "#2a3f6b",
+          active: "#243456",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

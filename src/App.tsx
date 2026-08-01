@@ -134,6 +134,9 @@ import ChoosingFenceMaterialGuide from "./pages/guides/ChoosingFenceMaterialGuid
 import PoolFencingSafetyGuide from "./pages/guides/PoolFencingSafetyGuide";
 import FenceOnlineQuoteGuide from "./pages/guides/FenceOnlineQuoteGuide";
 import QuotePage from "./pages/QuotePage";
+import Quote from "./pages/Quote";
+import { RecaptchaHost } from "./components/auth/RecaptchaHost";
+import { AppRoute, LoginRoute } from "./components/quote/AppRoutes";
 
 const queryClient = new QueryClient();
 
@@ -162,11 +165,15 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <RecaptchaHost />
           <ScrollToTop />
           <PrefetchProvider>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/quote" element={<QuotePage />} />
+              <Route path="/quote" element={<Quote />} />
+              <Route path="/app" element={<AppRoute />} />
+              <Route path="/login" element={<LoginRoute />} />
+              <Route path="/old-quote" element={<QuotePage />} />
               <Route path="/colorbond-fencing" element={<ColorbondFencing />} />
               <Route path="/timber-fencing" element={<TimberFencing />} />
               <Route path="/aluminum-fencing" element={<AluminiumFencing />} />
