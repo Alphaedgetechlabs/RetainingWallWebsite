@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Clock, ArrowLeft, ArrowRight, User, Mail, Phone, Shield } from "lucide-react";
 
 interface ContactStepProps {
@@ -19,6 +19,23 @@ const ContactStep = ({ onNext, onBack }: ContactStepProps) => {
   const [phone, setPhone] = useState("");
   const [touched, setTouched] = useState({ name: false, email: false, phone: false });
   const [submitted, setSubmitted] = useState(false);
+
+  // Randomised, non-semantic field identifiers so browsers/password managers
+  // cannot pattern-match these inputs to a saved profile.
+  const uid = useMemo(() => Math.random().toString(36).slice(2, 10), []);
+  const fid = (field: string) => `f_${field}_${uid}`;
+
+  // Attributes that suppress Chrome/Edge autofill and 3rd-party managers.
+  const noAutofill = {
+    autoComplete: "new-password" as const,
+    autoCorrect: "off",
+    autoCapitalize: "off",
+    spellCheck: false,
+    "data-1p-ignore": "true",
+    "data-lpignore": "true",
+    "data-bwignore": "true",
+    "data-form-type": "other",
+сь  };
 
   const errors = {
     name: !name.trim() ? "Please enter your name" : !validateName(name) ? "Please enter your correct name" : "",
