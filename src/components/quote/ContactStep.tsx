@@ -35,7 +35,7 @@ const ContactStep = ({ onNext, onBack }: ContactStepProps) => {
     "data-lpignore": "true",
     "data-bwignore": "true",
     "data-form-type": "other",
-сь  };
+};
 
   const errors = {
     name: !name.trim() ? "Please enter your name" : !validateName(name) ? "Please enter your correct name" : "",
