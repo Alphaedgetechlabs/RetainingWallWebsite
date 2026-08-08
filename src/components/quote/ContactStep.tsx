@@ -87,57 +87,68 @@ const ContactStep = ({ onNext, onBack }: ContactStepProps) => {
           }}
           className="space-y-6"
           noValidate
-        >
+          autoComplete="off"
+          data-form-type="other"
+ковр        >
           <div className="space-y-2">
-            <label className="flex items-center text-foreground font-semibold text-sm" htmlFor="full-name">
+            <label className="flex items-center text-foreground font-semibold text-sm" htmlFor={fid("name")}>
               <User className="w-4 h-4 mr-2" />
               Full Name
             </label>
             <input
               className={inputClass("name")}
-              id="full-name"
+              id={fid("name")}
+              name={fid("name")}
               placeholder="John Smith"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               onBlur={() => setTouched((t) => ({ ...t, name: true }))}
+              {...noAutofill}
             />
             {show("name") && <p className="text-destructive text-sm mt-1">{errors.name}</p>}
           </div>
 
           <div className="space-y-2">
-            <label className="flex items-center text-foreground font-semibold text-sm" htmlFor="email">
+            <label className="flex items-center text-foreground font-semibold text-sm" htmlFor={fid("email")}>
               <Mail className="w-4 h-4 mr-2" />
               Email Address
             </label>
             <input
               className={inputClass("email")}
-              id="email"
+              id={fid("email")}
+              name={fid("email")}
               placeholder="john@example.com"
-              type="email"
+              type="text"
+              inputMode="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               onBlur={() => setTouched((t) => ({ ...t, email: true }))}
+              {...noAutofill}
             />
             {show("email") && <p className="text-destructive text-sm mt-1">{errors.email}</p>}
           </div>
 
           <div className="space-y-2">
-            <label className="flex items-center text-foreground font-semibold text-sm" htmlFor="phone">
+            <label className="flex items-center text-foreground font-semibold text-sm" htmlFor={fid("phone")}>
               <Phone className="w-4 h-4 mr-2" />
               Best Phone Number
             </label>
             <input
               className={inputClass("phone")}
-              id="phone"
+              id={fid("phone")}
+              name={fid("phone")}
               placeholder="0412 234 562"
-              type="tel"
+              type="text"
+              inputMode="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               onBlur={() => setTouched((t) => ({ ...t, phone: true }))}
+              {...noAutofill}
             />
             {show("phone") && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
           </div>
+
 
           {/* Trust */}
           <div className="space-y-3 pt-4">
