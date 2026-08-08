@@ -89,7 +89,7 @@ const ContactStep = ({ onNext, onBack }: ContactStepProps) => {
           noValidate
           autoComplete="off"
           data-form-type="other"
-ковр        >
+>
           <div className="space-y-2">
             <label className="flex items-center text-foreground font-semibold text-sm" htmlFor={fid("name")}>
               <User className="w-4 h-4 mr-2" />
