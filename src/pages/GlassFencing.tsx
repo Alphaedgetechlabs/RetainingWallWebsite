@@ -11,11 +11,12 @@ import reinforcedConcreteIcon from "@/assets/engineered-reinforced-concrete.png"
 import soldierPileIcon from "@/assets/engineered-soldier-pile.png";
 import cantileverIcon from "@/assets/engineered-cantilever.png";
 import anchoredIcon from "@/assets/engineered-anchored.png";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const GlassFencing = () => {
   useDocumentTitle("Engineered Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleViewTypes = () => { scrollToSection("wall-types"); };
   const benefits = [
     { icon: FileCheck, title: "Certified Engineering", description: "Every wall comes with stamped engineering drawings and certification from a registered structural engineer" },

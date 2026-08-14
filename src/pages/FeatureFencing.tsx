@@ -11,11 +11,12 @@ import gabionRiverRockIcon from "@/assets/gabion-river-rock.png";
 import gabionCrushedGraniteIcon from "@/assets/gabion-crushed-granite.png";
 import gabionSandstoneIcon from "@/assets/gabion-sandstone.png";
 import gabionDecorativeIcon from "@/assets/gabion-decorative.png";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const FeatureFencing = () => {
   useDocumentTitle("Gabion Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleViewStyles = () => { scrollToSection("gabion-styles"); };
   const benefits = [
     { icon: Droplets, title: "Superior Drainage", description: "Open stone-fill structure allows water to pass freely, eliminating hydrostatic pressure behind the wall" },

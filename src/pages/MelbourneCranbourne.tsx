@@ -6,6 +6,7 @@ import CranbourneFenceTypes from "@/components/cranbourne/CranbourneFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import CranbourneFAQSection from "@/components/cranbourne/CranbourneFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneCranbourne = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

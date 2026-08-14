@@ -6,6 +6,7 @@ import FrankstonFenceTypes from "@/components/frankston/FrankstonFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import FrankstonFAQSection from "@/components/frankston/FrankstonFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneFrankston = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

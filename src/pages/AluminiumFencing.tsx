@@ -10,10 +10,11 @@ import sandstoneBlockIcon from "@/assets/stone-sandstone-block.png";
 import bluestoneIcon from "@/assets/stone-bluestone.png";
 import graniteIcon from "@/assets/stone-granite.png";
 import limestoneIcon from "@/assets/stone-limestone.png";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const AluminiumFencing = () => {
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleViewStyles = () => { scrollToSection("stone-types"); };
   const benefits = [{ icon: Mountain, title: "Timeless Elegance", description: "Natural stone creates a stunning, one-of-a-kind aesthetic that improves with age" }, { icon: Sparkles, title: "Premium Finish", description: "Each stone is unique, providing a bespoke look that can't be replicated" }, { icon: Gem, title: "Exceptional Durability", description: "Natural stone retaining walls last 100+ years with minimal maintenance" }, { icon: Leaf, title: "Eco-Friendly", description: "100% natural materials that blend harmoniously with the Australian landscape" }];
   const features = ["Locally sourced Australian sandstone and bluestone", "Dry-stack and mortared construction techniques", "Natural drainage through stone gaps in dry-stack walls", "Suitable for curved and terraced wall designs", "Heritage and architectural style matching available", "Professional installation by experienced stonemasons"];

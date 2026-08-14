@@ -6,12 +6,13 @@ import ReviewsSection from "@/components/ReviewsSection";
 import SouthYarraFAQSection from "@/components/south-yarra/SouthYarraFAQSection";
 import Footer from "@/components/Footer";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
 const MelbourneSouthYarra = () => {
   useDocumentTitle("South Yarra Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   return (
     <div className="min-h-screen bg-background">

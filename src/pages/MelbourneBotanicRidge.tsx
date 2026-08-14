@@ -6,12 +6,13 @@ import BotanicRidgeFenceTypes from "@/components/botanic-ridge/BotanicRidgeFence
 import ReviewsSection from "@/components/ReviewsSection";
 import BotanicRidgeFAQSection from "@/components/botanic-ridge/BotanicRidgeFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
 const MelbourneBotanicRidge = () => {
   useEffect(() => { document.title = "Botanic Ridge Retaining Wall Quotes — Get 3 Free Quotes in Minutes"; }, []);
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   return (
     <div className="min-h-screen bg-background">

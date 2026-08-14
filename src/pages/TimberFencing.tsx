@@ -11,11 +11,12 @@ import treatedPineIcon from "@/assets/treated-pine-timber.webp";
 import merbauIcon from "@/assets/merbau-timber.webp";
 import spottedGumIcon from "@/assets/spotted-gum-timber.webp";
 import cypressIcon from "@/assets/cypress-timber.webp";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const TimberFencing = () => {
   useDocumentTitle("Timber Sleeper Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleViewTimberTypes = () => { scrollToSection("timber-types"); };
   const benefits = [{ icon: Trees, title: "Natural Beauty", description: "Warm, natural timber aesthetic that blends seamlessly with gardens and landscaping" }, { icon: Droplets, title: "Excellent Drainage", description: "Timber sleeper walls allow natural water movement, reducing hydrostatic pressure buildup" }, { icon: Leaf, title: "Eco-Friendly", description: "Sustainable and renewable material — an environmentally responsible retaining solution" }, { icon: Ruler, title: "Versatile Heights", description: "Ideal for low-to-medium height walls, garden beds, terracing, and step-downs" }];
   const features = ["Treated pine and hardwood sleeper options", "Galvanised steel posts concreted for stability", "Drainage aggregate and ag-pipe installation included", "Step-down configurations for sloped sites", "Termite-resistant timber treatments available", "Professional installation by verified contractors"];

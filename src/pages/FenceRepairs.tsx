@@ -9,11 +9,12 @@ import repairConcreteIcon from "@/assets/repair-concrete-sleeper.png";
 import repairTimberIcon from "@/assets/repair-timber-sleeper.png";
 import repairBlockIcon from "@/assets/repair-block-wall.png";
 import repairStoneIcon from "@/assets/repair-stone-wall.png";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const FenceRepairs = () => {
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
-  const handleEmergencyRepairs = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
+  const handleEmergencyRepairs = () => { navigateTo(QUOTE_URL); };
   const benefits = [{
     icon: Clock, title: "Fast Response", description: "2-36 hour response time for urgent repairs and emergency wall failures"
   }, {

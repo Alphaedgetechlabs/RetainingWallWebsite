@@ -7,12 +7,13 @@ import { MapPin, Users, Star, Clock, Phone, ChevronDown, ChevronUp } from "lucid
 import SuburbLink from "@/components/SuburbLink";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import darwinServiceImg from "@/assets/darwin-service-area.webp";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const Darwin = () => {
   useDocumentTitle("Darwin Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
   const [showAllSuburbs, setShowAllSuburbs] = useState(false);
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const suburbs = ["Coconut Grove", "Jingili", "Millner", "Moil", "Nightcliff", "Rapid Creek", "Bayview", "Charles Darwin", "Darwin", "Eaton", "East Point", "Fannie Bay", "Hidden Valley", "Larrakeyah", "Ludmilla", "Parap", "Stuart Park", "The Gardens", "The Narrows", "Winnellie", "Woolner", "Alawa", "Brinkin", "Buffalo Creek", "Casuarina", "Holmes", "Leanyer", "Lee Point", "Lyons", "Muirhead", "Nakara", "Tiwi"];
   const allSuburbs = ["Wagaman", "Wanguri", "Anula", "Berrimah", "Coonawarra", "Karama", "Malak", "Marrara", "Sanderson", "Wulagi", "Bakewell", "Bellamack", "Driver", "Durack", "Gray", "Gunn", "Moulden", "Palmerston City", "Rosebery", "Woodroffe", "Archer", "Farrar", "Johnston", "Marlow Lagoon", "Mitchell", "Pinelands", "Yarrawonga", "Zuccoli", "Bees Creek", "Coolalinga", "Freds Pass", "Girraween", "Holtze", "Howard Springs", "Humpty Doo", "Knuckey Lagoon", "McMinns Lagoon", "Noonamah", "Robertson Barracks", "Virginia", "Berry Springs", "Blackmore", "Channel Island", "Darwin River", "Fly Creek", "Livingstone", "Southport", "Tumbling Waters", "Weddell", "Wickham", "Acacia Hills", "Black Jungle", "Gunn Point", "Herbert", "Hughes", "Lambells Lagoon", "Lloyd Creek", "Manton", "Middle Point", "Murrumujuk", "Wagait Beach", "Mandorah"];
   const stats = [{ icon: Users, label: "Jobs Quoted", value: "600+" }, { icon: Star, label: "Average Rating", value: "4.9/5" }, { icon: Clock, label: "Years Experience", value: "10+" }, { icon: MapPin, label: "Suburbs Serviced", value: "90+" }];

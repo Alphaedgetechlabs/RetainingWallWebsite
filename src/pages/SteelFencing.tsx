@@ -10,9 +10,10 @@ import tubularSteelIcon from "@/assets/tubular-steel.png";
 import flatBarIcon from "@/assets/flat-bar.png";
 import garrisonIcon from "@/assets/garrison.png";
 import customFabricatedIcon from "@/assets/custom-fabricated.png";
+import { navigateTo } from "@/lib/spa-navigate";
 const QUOTE_URL = "/quote";
 const SteelFencing = () => {
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleViewStyles = () => { scrollToSection("steel-styles"); };
   const benefits = [{ icon: Shield, title: "Ultimate Strength", description: "Steel provides unmatched structural strength and impact resistance" }, { icon: Hammer, title: "Built to Last", description: "Properly treated steel retaining walls can last 50+ years with minimal maintenance" }, { icon: Cog, title: "Versatile Options", description: "Available in tubular, flat bar, and fabricated panel designs" }, { icon: Paintbrush, title: "Custom Finishes", description: "Powder-coated or galvanised in a wide range of colours" }];
   const features = ["Hot-dipped galvanised steel construction", "Powder-coated finish in 50+ colours", "Tubular, flat bar & panel options", "Custom heights and configurations", "Gate and automation compatible"];

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import colorbondWhiteIcon from "@/assets/colorbond-white-icon.webp";
 import timberWhiteIcon from "@/assets/timber-white-icon.webp";
 import aluminiumWhiteIcon from "@/assets/aluminium-white-icon.webp";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -13,7 +14,7 @@ interface DoncasterFenceTypesProps {
 }
 
 const DoncasterFenceTypes = ({ onQuoteClick }: DoncasterFenceTypesProps) => {
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   const fenceTypes = [
     { id: "colorbond", name: "Concrete Sleeper Retaining Wall", description: "Durable, weather-resistant steel retaining wall available in 15 colours. Perfect for Australian conditions.", features: ["10 year manufacturer warranty", "Termite resistant", "Low maintenance", "15 colour options"], price: "$75/metre", iconImage: colorbondWhiteIcon, popular: true, href: "/colorbond-fencing" },

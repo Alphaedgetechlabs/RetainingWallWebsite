@@ -7,12 +7,13 @@ import { MapPin, Users, Star, Clock, Phone, ChevronDown, ChevronUp } from "lucid
 import SuburbLink from "@/components/SuburbLink";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import canberraServiceImg from "@/assets/canberra-service-area.webp";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const Canberra = () => {
   useDocumentTitle("Canberra Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
   const [showAllSuburbs, setShowAllSuburbs] = useState(false);
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const suburbs = ["Aranda", "Belconnen", "Bruce", "Charnwood", "Cook", "Dunlop", "Evatt", "Florey", "Flynn", "Fraser", "Giralang", "Hawker", "Harrison", "Higgins", "Holt", "Kaleen", "Latham", "Lawson", "Macgregor", "Macnamara", "Macquarie", "McKellar", "Melba", "Page", "Scullin", "Spence", "Strathnairn", "Weetangera", "Acton", "Ainslie", "Barton", "Braddon"];
   const allSuburbs = ["Campbell", "Capital Hill", "City", "Deakin", "Dickson", "Downer", "Forrest", "Fyshwick", "Griffith", "Hackett", "Kingston", "Lyneham", "Narrabundah", "O'Connor", "Parkes", "Red Hill", "Reid", "Russell", "Turner", "Watson", "Yarralumla", "Amaroo", "Bonner", "Casey", "Crace", "Forde", "Franklin", "Gungahlin", "Jacka", "Kenny", "Kinlyside", "Mitchell", "Moncrieff", "Ngunnawal", "Nicholls", "Palmerston", "Taylor", "Throsby", "Beard", "Harman", "Hume", "Oaks Estate", "Symonston", "Canberra Airport", "Pialligo", "Denman Prospect", "Coombs", "Molonglo", "Whitlam", "Wright", "Banks", "Bonython", "Calwell", "Chisholm", "Conder", "Fadden", "Gilmore", "Gordon", "Gowrie", "Greenway", "Isabella Plains", "Kambah", "Macarthur", "Monash", "Oxley", "Richardson", "Theodore", "Wanniassa", "Chapman", "Duffy", "Fisher", "Holder", "Rivett", "Stirling", "Waramanga", "Weston", "Chifley", "Curtin", "Farrer", "Garran", "Hughes", "Isaacs", "Lyons", "Mawson", "O'Malley", "Pearce", "Phillip", "Torrens"];
   const stats = [{ icon: Users, label: "Jobs Quoted", value: "1,100+" }, { icon: Star, label: "Average Rating", value: "4.8/5" }, { icon: Clock, label: "Years Experience", value: "14+" }, { icon: MapPin, label: "Suburbs Serviced", value: "120+" }];

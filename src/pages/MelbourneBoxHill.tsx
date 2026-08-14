@@ -6,6 +6,7 @@ import BoxHillFenceTypes from "@/components/box-hill/BoxHillFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import BoxHillFAQSection from "@/components/box-hill/BoxHillFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneBoxHill = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

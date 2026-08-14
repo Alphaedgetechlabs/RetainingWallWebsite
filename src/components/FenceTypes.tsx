@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import colorbondWhiteIcon from "@/assets/colorbond-white-icon.webp";
 import timberWhiteIcon from "@/assets/timber-white-icon.webp";
 import aluminiumWhiteIcon from "@/assets/aluminium-white-icon.webp";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -14,7 +15,7 @@ interface FenceTypesProps {
 
 const FenceTypes = ({ onQuoteClick }: FenceTypesProps) => {
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   const fenceTypes = [

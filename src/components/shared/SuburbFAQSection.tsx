@@ -1,6 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { HelpCircle, Quote } from "lucide-react";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -14,7 +15,7 @@ const SuburbFAQSection = ({ suburbName, onQuoteClick }: SuburbFAQSectionProps) =
     if (onQuoteClick) {
       onQuoteClick();
     } else {
-      window.location.href = QUOTE_URL;
+      navigateTo(QUOTE_URL);
     }
   };
 

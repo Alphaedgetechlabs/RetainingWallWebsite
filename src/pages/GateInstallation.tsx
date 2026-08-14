@@ -11,12 +11,13 @@ import swingGateIcon from "@/assets/swing-gate.png";
 import pedestrianGateIcon from "@/assets/pedestrian-gate.png";
 import commercialGateIcon from "@/assets/commercial-gate.png";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const GateInstallation = () => {
   useDocumentTitle("Gate Installation Quotes — Get 3 Free Quotes in Minutes");
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
   const handleViewGateOptions = () => {
     scrollToSection("gate-types");

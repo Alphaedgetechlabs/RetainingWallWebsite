@@ -6,6 +6,7 @@ import GlenWaverleyFenceTypes from "@/components/glen-waverley/GlenWaverleyFence
 import ReviewsSection from "@/components/ReviewsSection";
 import GlenWaverleyFAQSection from "@/components/glen-waverley/GlenWaverleyFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneGlenWaverley = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

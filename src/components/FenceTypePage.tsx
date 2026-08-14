@@ -2,6 +2,7 @@ import { Check, Phone, Award } from "lucide-react";
 import { ReactNode } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -59,7 +60,7 @@ const FenceTypePage = ({
   viewButtonText = "View Colour Range",
 }: FenceTypePageProps) => {
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   // Determine secondary button text based on page type

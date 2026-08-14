@@ -1,5 +1,6 @@
 import { Send, MessageSquareQuote, ThumbsUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -13,7 +14,7 @@ const SuburbHowItWorks = ({ suburbName, onQuoteClick }: SuburbHowItWorksProps) =
     if (onQuoteClick) {
       onQuoteClick();
     } else {
-      window.location.href = QUOTE_URL;
+      navigateTo(QUOTE_URL);
     }
   };
 

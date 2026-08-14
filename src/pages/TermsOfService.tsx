@@ -2,11 +2,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { FileText } from "lucide-react";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const TermsOfService = () => {
   useDocumentTitle("Terms of Service — QuoteMyRetainingWall");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   return <div className="min-h-screen bg-background">
       <Header onQuoteClick={handleQuoteClick} />
       <section className="pt-32 pb-12 bg-gradient-to-br from-primary/5 via-background to-accent/5">
