@@ -10,9 +10,10 @@ import commercialSecurityIcon from "@/assets/commercial-security.png";
 import industrialSecurityIcon from "@/assets/industrial-security.png";
 import governmentSecurityIcon from "@/assets/government-security.png";
 import criticalInfrastructureSecurityIcon from "@/assets/critical-infrastructure-security.png";
+import { navigateTo } from "@/lib/spa-navigate";
 const QUOTE_URL = "/quote";
 const SecurityFencing = () => {
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleSecurityOptions = () => { scrollToSection("security-applications"); };
   const benefits = [{ icon: ShieldCheck, title: "Maximum Protection", description: "Heavy-duty construction designed to deter and prevent unauthorised access" }, { icon: Lock, title: "Anti-Climb Design", description: "Specialised profiles and spikes make scaling virtually impossible" }, { icon: Camera, title: "Integration Ready", description: "Compatible with CCTV, sensors, and electronic access systems" }, { icon: AlertTriangle, title: "Visible Deterrent", description: "Professional appearance sends a clear security message" }];
   const features = ["358 anti-climb mesh (prison mesh)", "Palisade and garrison styles", "Razor wire and barbed wire options", "Electronic gate integration", "Powder-coated corrosion protection", "Compliant with Australian security standards"];

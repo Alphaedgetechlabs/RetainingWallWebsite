@@ -6,6 +6,7 @@ import DoncasterFenceTypes from "@/components/doncaster/DoncasterFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import DoncasterFAQSection from "@/components/doncaster/DoncasterFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneDoncaster = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

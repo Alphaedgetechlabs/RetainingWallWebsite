@@ -6,6 +6,7 @@ import CroydonFenceTypes from "@/components/croydon/CroydonFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import CroydonFAQSection from "@/components/croydon/CroydonFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneCroydon = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

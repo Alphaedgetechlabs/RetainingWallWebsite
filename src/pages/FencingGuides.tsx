@@ -11,12 +11,13 @@ import guideChoosingMaterial from "@/assets/guide-choosing-material.png";
 import guideDrainage from "@/assets/guide-drainage.png";
 import guideOnlineQuote from "@/assets/guide-online-quote.png";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
 const FencingGuides = () => {
   useDocumentTitle("Retaining Wall Guides & Expert Resources — QuoteMyRetainingWall");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const guides = [
     { title: "Complete Guide to Concrete Sleeper Retaining Walls", description: "Everything you need to know about concrete sleeper retaining walls — materials, costs, installation and maintenance.", category: "Materials", readTime: "8 min read", slug: "complete-guide-to-colorbond-fencing", popular: true, image: guideConcreteSleeper },
     { title: "Retaining Wall Height Regulations by State", description: "A comprehensive guide to retaining wall height regulations across all Australian states and territories.", category: "Regulations", readTime: "6 min read", slug: "fence-height-regulations-by-state", popular: true, image: guideHeightRegulations },

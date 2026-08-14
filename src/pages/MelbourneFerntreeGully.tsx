@@ -6,12 +6,13 @@ import FerntreeGullyFenceTypes from "@/components/ferntree-gully/FerntreeGullyFe
 import ReviewsSection from "@/components/ReviewsSection";
 import FerntreeGullyFAQSection from "@/components/ferntree-gully/FerntreeGullyFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
 const MelbourneFerntreeGully = () => {
   useEffect(() => { document.title = "Ferntree Gully Retaining Wall Quotes — Get 3 Free Quotes in Minutes"; }, []);
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   return (
     <div className="min-h-screen bg-background">

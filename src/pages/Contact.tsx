@@ -9,11 +9,12 @@ import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const Contact = () => {
   useDocumentTitle("Contact Us — QuoteMyRetainingWall");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", message: "" });
   const handleSubmit = (e: React.FormEvent) => {

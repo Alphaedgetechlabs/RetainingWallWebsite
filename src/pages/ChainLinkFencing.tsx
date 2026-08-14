@@ -7,11 +7,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Check, Trash2, HardHat, RefreshCw, Truck, Award } from "lucide-react";
 import { scrollToSection } from "@/lib/scroll-utils";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const ChainLinkFencing = () => {
   useDocumentTitle("Retaining Wall Replacement & Removal Quotes — Get 3 Free Quotes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleViewProcess = () => { scrollToSection("process"); };
   const benefits = [
     { icon: Trash2, title: "Full Demolition", description: "Safe removal of old, failing, or dangerous retaining walls with minimal disruption to your property" },

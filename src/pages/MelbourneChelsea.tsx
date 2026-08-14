@@ -6,10 +6,11 @@ import ReviewsSection from "@/components/ReviewsSection";
 import ChelseaFAQSection from "@/components/chelsea/ChelseaFAQSection";
 import Footer from "@/components/Footer";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 const QUOTE_URL = "/quote";
 const MelbourneChelsea = () => {
   useDocumentTitle("Chelsea Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   return (<div className="min-h-screen bg-background"><Header onQuoteClick={handleQuoteClick} /><main><ChelseaHeroSection /><ChelseaHowItWorks /><div id="fence-types"><ChelseaFenceTypes /></div><div id="reviews"><ReviewsSection /></div><div id="faq"><ChelseaFAQSection /></div></main><Footer /></div>);
 };
 export default MelbourneChelsea;

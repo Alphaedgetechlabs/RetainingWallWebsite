@@ -10,6 +10,7 @@ import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { OrganizationJsonLd, LocalBusinessJsonLd, FAQJsonLd } from "@/components/seo/JsonLd";
 import tradeConfig from "@/data/tradeConfig.json";
 import faqs from "@/data/faqs.json";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -17,7 +18,7 @@ const Index = () => {
   useDocumentTitle(tradeConfig.seo.defaultTitle);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

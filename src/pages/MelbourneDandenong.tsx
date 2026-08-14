@@ -6,6 +6,7 @@ import DandenongFenceTypes from "@/components/dandenong/DandenongFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import DandenongFAQSection from "@/components/dandenong/DandenongFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneDandenong = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

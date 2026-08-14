@@ -6,12 +6,13 @@ import BlackburnFenceTypes from "@/components/blackburn/BlackburnFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import BlackburnFAQSection from "@/components/blackburn/BlackburnFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
 const MelbourneBlackburn = () => {
   useEffect(() => { document.title = "Blackburn Retaining Wall Quotes — Get 3 Free Quotes in Minutes"; }, []);
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   return (
     <div className="min-h-screen bg-background">

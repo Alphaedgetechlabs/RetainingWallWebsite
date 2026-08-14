@@ -6,12 +6,13 @@ import BeaconsfieldFenceTypes from "@/components/beaconsfield/BeaconsfieldFenceT
 import ReviewsSection from "@/components/ReviewsSection";
 import BeaconsfieldFAQSection from "@/components/beaconsfield/BeaconsfieldFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
 const MelbourneBeaconsfield = () => {
   useEffect(() => { document.title = "Beaconsfield Retaining Wall Quotes — Get 3 Free Quotes in Minutes"; }, []);
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   return (
     <div className="min-h-screen bg-background">

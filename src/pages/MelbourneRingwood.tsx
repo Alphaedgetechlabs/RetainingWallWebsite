@@ -6,6 +6,7 @@ import RingwoodFenceTypes from "@/components/ringwood/RingwoodFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import RingwoodFAQSection from "@/components/ringwood/RingwoodFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneRingwood = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

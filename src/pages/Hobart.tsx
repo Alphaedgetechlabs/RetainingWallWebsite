@@ -7,12 +7,13 @@ import { MapPin, Users, Star, Clock, Phone, ChevronDown, ChevronUp } from "lucid
 import SuburbLink from "@/components/SuburbLink";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import hobartServiceImg from "@/assets/hobart-service-area.webp";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const Hobart = () => {
   useDocumentTitle("Hobart Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
   const [showAllSuburbs, setShowAllSuburbs] = useState(false);
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const suburbs = ["Bridgewater", "Green Point", "Gagebrook", "Herdsmans Cove", "Old Beach", "Brighton", "Blackmans Bay", "Bonnet Hill", "Howden", "Huntingfield", "Kingston", "Firthside", "Maranoa Heights", "Kingston Beach", "Taroona", "Midway Point", "Sorell", "Dodges Ferry", "Acton Park", "Bellerive", "Cambridge", "Clarendon Vale", "Geilston Bay", "Howrah", "Lauderdale", "Seven Mile Beach", "Lindisfarne", "Flagstaff Gully", "Montagu Bay", "Mornington", "Mount Rumney", "Oakdowns"];
   const allSuburbs = ["Otago", "Risdon", "Risdon Vale", "Roches Beach", "Rokeby", "Rose Bay", "Rosny", "Rosny Park", "Tranmere", "Warrane", "Austins Ferry", "Berriedale", "Chigwell", "Claremont", "Abbotsfield", "Collinsvale", "Derwent Park", "Dowsing Point", "Glenlusk", "Glenorchy", "Elwick", "Merton", "Goodwood", "Granton", "Lutana", "Montrose", "Moonah", "Rosetta", "West Moonah", "Battery Point", "Dynnyrne", "Fern Tree", "Glebe", "Hobart", "Lenah Valley", "Mount Nelson", "Mount Stuart", "New Town", "Cornelian Bay", "North Hobart", "Ridgeway", "Sandy Bay", "South Hobart", "Cascades", "Tolmans Hill", "West Hobart"];
   const stats = [{ icon: Users, label: "Jobs Quoted", value: "800+" }, { icon: Star, label: "Average Rating", value: "4.9/5" }, { icon: Clock, label: "Years Experience", value: "10+" }, { icon: MapPin, label: "Suburbs Serviced", value: "79+" }];

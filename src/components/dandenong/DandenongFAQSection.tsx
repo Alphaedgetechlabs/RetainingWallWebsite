@@ -1,6 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { HelpCircle, Quote } from "lucide-react";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -9,7 +10,7 @@ interface DandenongFAQSectionProps {
 }
 
 const DandenongFAQSection = ({ onQuoteClick }: DandenongFAQSectionProps) => {
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   const faqs = [
     { question: "How much does retaining wall installation cost in Dandenong?", answer: "Dandenong retaining wall installation costs depend on the retaining wall material, height, total length, and site conditions. As a guide from our Dandenong verified retaining wall contractors, timber retaining walls start from $65 per metre, Colorbond retaining walls start from $75 per metre, and pool-safe retaining wall options can start from $60 per metre. Prices may increase for steeper blocks, rocky soil, retaining requirements, or old retaining wall removal. For the most accurate price, use our instant retaining wall quote tool — it gives you a fast online estimate and matches you with local retaining wall experts who'll provide detailed on-site pricing." },

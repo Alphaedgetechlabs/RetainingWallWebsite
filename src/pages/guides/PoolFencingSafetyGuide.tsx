@@ -2,10 +2,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { BookOpen, AlertTriangle } from "lucide-react";
+import { navigateTo } from "@/lib/spa-navigate";
 const QUOTE_URL = "/quote";
 const PoolFencingSafetyGuide = () => {
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
   return <div className="min-h-screen bg-background">
       <Header onQuoteClick={handleQuoteClick} />

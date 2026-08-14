@@ -11,11 +11,12 @@ import smoothIcon from "@/assets/concrete-sleeper-smooth.png";
 import rockfaceIcon from "@/assets/concrete-sleeper-rockface.png";
 import timberLookIcon from "@/assets/concrete-sleeper-timber-look.png";
 import colouredIcon from "@/assets/concrete-sleeper-coloured.png";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const ColorbondFencing = () => {
   useDocumentTitle("Concrete Sleeper Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleViewStyles = () => { scrollToSection("sleeper-styles"); };
   const benefits = [{
     icon: Shield, title: "Extreme Durability", description: "Concrete sleepers withstand soil pressure, moisture, and harsh Australian conditions for 50+ years"

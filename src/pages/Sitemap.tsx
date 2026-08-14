@@ -3,13 +3,14 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { Map, Home, Wrench, MapPin, BookOpen, FileText } from "lucide-react";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
 const Sitemap = () => {
   useDocumentTitle("Sitemap — QuoteMyRetainingWall");
   const sitemapSections = [{ title: "Home", href: "/", icon: Home }, { title: "Services", icon: Wrench, links: [{ name: "Timber Retaining Wall", href: "/timber-fencing" }, { name: "Concrete Sleeper Retaining Wall", href: "/colorbond-fencing" }, { name: "Feature Retaining Wall", href: "/feature-fencing" }, { name: "Aluminium Retaining Wall", href: "/aluminium-fencing" }, { name: "Chain Link Retaining Wall", href: "/chain-link-fencing" }, { name: "Security Retaining Wall", href: "/security-fencing" }, { name: "Steel Retaining Wall", href: "/steel-fencing" }, { name: "Pool Retaining Wall", href: "/pool-fencing" }, { name: "Retaining Wall Repairs", href: "/fence-repairs" }, { name: "Gate Installation", href: "/gate-installation" }] }, { title: "Service Areas", icon: MapPin, links: [{ name: "Sydney", href: "/sydney" }, { name: "Melbourne", href: "/melbourne" }, { name: "Brisbane", href: "/brisbane" }, { name: "Perth", href: "/perth" }, { name: "Adelaide", href: "/adelaide" }, { name: "Canberra", href: "/canberra" }, { name: "Hobart", href: "/hobart" }, { name: "Darwin", href: "/darwin" }] }, { title: "Resources", icon: BookOpen, links: [{ name: "Retaining Wall Guides", href: "/fencing-guides" }, { name: "FAQ", href: "/faq" }, { name: "Contact Us", href: "/contact" }] }, { title: "Legal", icon: FileText, links: [{ name: "Terms of Service", href: "/terms-of-service" }, { name: "Privacy Policy", href: "/privacy-policy" }] }];
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   return <div className="min-h-screen bg-background">
       <Header onQuoteClick={handleQuoteClick} />

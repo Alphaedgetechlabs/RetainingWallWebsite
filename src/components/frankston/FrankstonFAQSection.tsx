@@ -1,6 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { HelpCircle, Quote } from "lucide-react";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -9,7 +10,7 @@ interface FrankstonFAQSectionProps {
 }
 
 const FrankstonFAQSection = ({ onQuoteClick }: FrankstonFAQSectionProps) => {
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   const faqs = [
     { question: "How much does a retaining wall cost in Frankston?", answer: "Retaining wall costs in Frankston depend on the material, height, and site conditions. Timber starts from $65/m, Colorbond from $75/m." },

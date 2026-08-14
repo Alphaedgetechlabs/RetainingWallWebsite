@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Star, Users } from "lucide-react";
 import heroFence from "@/assets/QuoteMyRetainingWall_Photo.webp";
 import fastWhiteIcon from "@/assets/fast-white-icon.webp";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -11,7 +12,7 @@ interface SuburbHeroSectionProps {
 
 const SuburbHeroSection = ({ suburbName }: SuburbHeroSectionProps) => {
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

@@ -1,6 +1,7 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { HelpCircle, Quote } from "lucide-react";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -9,7 +10,7 @@ interface CroydonFAQSectionProps {
 }
 
 const CroydonFAQSection = ({ onQuoteClick }: CroydonFAQSectionProps) => {
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   const faqs = [
     { question: "How much does retaining wall installation cost in Croydon?", answer: "Croydon retaining wall installation costs depend on the retaining wall material, height, total length, and site conditions. As a guide from our Croydon verified retaining wall contractors, timber retaining walls start from $65 per metre, Colorbond retaining walls start from $75 per metre, and pool-safe retaining wall options can start from $60 per metre." },

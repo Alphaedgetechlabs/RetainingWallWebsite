@@ -6,6 +6,7 @@ import ReviewsSection from "@/components/ReviewsSection";
 import PakenhamFAQSection from "@/components/pakenham/PakenhamFAQSection";
 import Footer from "@/components/Footer";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -13,7 +14,7 @@ const MelbournePakenham = () => {
   useDocumentTitle("Pakenham Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

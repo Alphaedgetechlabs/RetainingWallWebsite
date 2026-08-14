@@ -6,10 +6,11 @@ import ReviewsSection from "@/components/ReviewsSection";
 import ClydeFAQSection from "@/components/clyde/ClydeFAQSection";
 import Footer from "@/components/Footer";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 const QUOTE_URL = "/quote";
 const MelbourneClyde = () => {
   useDocumentTitle("Clyde Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   return (<div className="min-h-screen bg-background"><Header onQuoteClick={handleQuoteClick} /><main><ClydeHeroSection /><ClydeHowItWorks /><div id="fence-types"><ClydeFenceTypes /></div><div id="reviews"><ReviewsSection /></div><div id="faq"><ClydeFAQSection /></div></main><Footer /></div>);
 };
 export default MelbourneClyde;

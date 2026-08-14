@@ -4,11 +4,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Button } from "@/components/ui/button";
 import { HelpCircle, MessageSquare } from "lucide-react";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const FAQ = () => {
   useDocumentTitle("Frequently Asked Questions — QuoteMyRetainingWall");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const faqCategories = [{
     title: "Getting Started",
     faqs: [{ question: "How do I get a retaining wall quote?", answer: "Simply click 'Get Free Quotes' on our website, fill out the quick form with your retaining wall requirements, and we'll connect you with up to 3 verified local contractors who will provide competitive quotes within 1-48 hours." }, { question: "Is the quote service really free?", answer: "Yes, our quote service is completely free for homeowners. There are no hidden fees or obligations." }, { question: "How long does it take to receive quotes?", answer: "Most homeowners receive their first quote within 2 hours of submitting their request." }]

@@ -6,12 +6,13 @@ import ReviewsSection from "@/components/ReviewsSection";
 import RyeFAQSection from "@/components/rye/RyeFAQSection";
 import Footer from "@/components/Footer";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
 const MelbourneRye = () => {
   useDocumentTitle("Rye Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
 
   return (
     <div className="min-h-screen bg-background">

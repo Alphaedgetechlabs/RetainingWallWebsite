@@ -6,10 +6,11 @@ import CarrumDownsFenceTypes from "@/components/carrum-downs/CarrumDownsFenceTyp
 import ReviewsSection from "@/components/ReviewsSection";
 import CarrumDownsFAQSection from "@/components/carrum-downs/CarrumDownsFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 const QUOTE_URL = "/quote";
 const MelbourneCarrumDowns = () => {
   useEffect(() => { document.title = "Carrum Downs Retaining Wall Quotes — Get 3 Free Quotes in Minutes"; }, []);
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   return (<div className="min-h-screen bg-background"><Header onQuoteClick={handleQuoteClick} /><main><CarrumDownsHeroSection /><CarrumDownsHowItWorks onQuoteClick={handleQuoteClick} /><div id="fence-types"><CarrumDownsFenceTypes onQuoteClick={handleQuoteClick} /></div><div id="reviews"><ReviewsSection /></div><div id="faq"><CarrumDownsFAQSection onQuoteClick={handleQuoteClick} /></div></main><Footer /></div>);
 };
 export default MelbourneCarrumDowns;

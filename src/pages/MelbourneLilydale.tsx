@@ -6,6 +6,7 @@ import LilydaleFenceTypes from "@/components/lilydale/LilydaleFenceTypes";
 import ReviewsSection from "@/components/ReviewsSection";
 import LilydaleFAQSection from "@/components/lilydale/LilydaleFAQSection";
 import Footer from "@/components/Footer";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 
@@ -15,7 +16,7 @@ const MelbourneLilydale = () => {
   }, []);
 
   const handleQuoteClick = () => {
-    window.location.href = QUOTE_URL;
+    navigateTo(QUOTE_URL);
   };
 
   return (

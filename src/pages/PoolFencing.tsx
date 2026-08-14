@@ -11,11 +11,12 @@ import interlockingIcon from "@/assets/block-interlocking.png";
 import besserIcon from "@/assets/block-besser.png";
 import splitfaceIcon from "@/assets/block-splitface.png";
 import keystoneIcon from "@/assets/block-keystone.png";
+import { navigateTo } from "@/lib/spa-navigate";
 
 const QUOTE_URL = "/quote";
 const PoolFencing = () => {
   useDocumentTitle("Block Retaining Wall Quotes — Get 3 Free Quotes in Minutes");
-  const handleQuoteClick = () => { window.location.href = QUOTE_URL; };
+  const handleQuoteClick = () => { navigateTo(QUOTE_URL); };
   const handleViewOptions = () => { scrollToSection("block-types"); };
   const benefits = [{ icon: ShieldCheck, title: "Maximum Strength", description: "Reinforced concrete block walls handle extreme soil loads and tall wall heights" }, { icon: Layers, title: "Interlocking System", description: "Blocks interlock for superior structural integrity without mortar in many designs" }, { icon: Hammer, title: "Built to Last", description: "Concrete masonry provides a 60+ year lifespan with virtually zero maintenance" }, { icon: Ruler, title: "Engineered Heights", description: "Suitable for walls from 600mm to 3m+ with proper engineering certification" }];
   const features = ["Steel-reinforced concrete block construction", "Core-filled with concrete and rebar for tall walls", "Integrated drainage and weep hole systems", "Available in standard grey, charcoal, and coloured finishes", "Suitable for commercial and residential applications", "Engineer-certified designs for walls over 1m"];
