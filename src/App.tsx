@@ -164,6 +164,7 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <InstantNavigation />
           <PrefetchProvider>
             <Routes>
               <Route path="/" element={<Index />} />
