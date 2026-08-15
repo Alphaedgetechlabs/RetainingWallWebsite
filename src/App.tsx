@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import PageTransition from "./components/PageTransition";
+import InstantNavigation from "./components/InstantNavigation";
 import usePrefetch from "./hooks/usePrefetch";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -163,6 +164,7 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <ScrollToTop />
+          <InstantNavigation />
           <PrefetchProvider>
             <Routes>
               <Route path="/" element={<Index />} />
