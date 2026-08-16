@@ -38,7 +38,7 @@ const TimelineStep = ({ onNext, onBack }: TimelineStepProps) => {
             When do you want the job done?
           </h1>
           <p className="text-[17px] text-muted-foreground mb-8">
-            We'll prioritise fencing contractors who can meet your timeline.
+            We'll prioritise retaining wall contractors who can meet your timeline.
           </p>
 
           <div className="space-y-4">

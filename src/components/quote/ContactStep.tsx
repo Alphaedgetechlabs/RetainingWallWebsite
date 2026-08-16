@@ -74,7 +74,7 @@ const ContactStep = ({ onNext, onBack }: ContactStepProps) => {
             Almost done! Your quotes are just minutes away.
           </h1>
           <p className="text-muted-foreground text-lg">
-            Enter your details so your fencing pros can send accurate pricing.
+            Enter your details so your retaining wall professionals can send accurate pricing.
           </p>
         </header>
 

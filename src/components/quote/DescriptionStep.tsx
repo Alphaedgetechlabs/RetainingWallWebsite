@@ -43,7 +43,7 @@ const DescriptionStep = ({ trade, onNext, onBack }: DescriptionStepProps) => {
             <div className="text-brand-orange text-sm font-semibold">60% Complete</div>
           </div>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-foreground mb-4 tracking-tight">
-            Describe your {tradeLower} job
+            Describe your retaining wall job
           </h1>
           <p className="text-muted-foreground text-base sm:text-lg">
             The more detail you add, the more accurate your quotes will be.
@@ -59,12 +59,12 @@ const DescriptionStep = ({ trade, onNext, onBack }: DescriptionStepProps) => {
           <textarea
             className="w-full h-40 p-5 border-2 border-brand-orange rounded-xl focus:ring-0 focus:outline-none text-foreground text-base sm:text-lg resize-none bg-card"
             id="job-description"
-            placeholder={`e.g. Replace broken wooden ${tradeLower} along the backyard`}
+            placeholder={`e.g. Replace existing timber retaining wall along the back fence`}
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
           <p className="mt-3 text-sm text-muted-foreground">
-            Example: "Build 20sqm fence along backyard. Standard height. Include stairs."
+            Example: "Build 20m timber retaining wall along back fence. 0.8m height."
           </p>
         </section>
 

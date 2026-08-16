@@ -60,7 +60,7 @@ const LocationStep = ({ trade, onNext }: LocationStepProps) => {
               </svg>
             </div>
             <p className="text-muted-foreground text-lg">
-              We'll instantly match you with <span className="text-brand-orange font-semibold">verified local {tradeLower} pros</span> who are available right now.
+              We'll instantly match you with <span className="text-brand-orange font-semibold">verified local retaining wall professionals</span> who are available right now.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ const LocationStep = ({ trade, onNext }: LocationStepProps) => {
             <div>
               <h3 className="font-bold text-foreground text-lg mb-1">Local Expertise</h3>
               <p className="text-muted-foreground">
-                Trusted by <span className="font-bold text-foreground">1000's of Aussie homeowners</span> looking for fast, reliable {tradeLower} quotes.
+                Trusted by <span className="font-bold text-foreground">1000's of Aussie homeowners</span> looking for fast, reliable quotes.
               </p>
             </div>
           </div>
