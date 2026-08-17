@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X, Phone } from "lucide-react";
-import arrowAsset from "@/assets/arrow_new.webp.asset.json";
+// Arrow logo asset — kept as public static file for dev/prod parity
 
 interface HeaderProps {
   onQuoteClick: () => void;
@@ -37,7 +37,7 @@ const Header = ({ onQuoteClick }: HeaderProps) => {
                 <span className="text-[#333333] dark:text-white" style={{ fontWeight: 700 }}>Retaining Wall</span>
               </span>
               <img
-                src={arrowAsset.url}
+                src="/arrow_new.webp"
                 alt=""
                 aria-hidden="true"
                 className="ml-[0.5cm] h-[1.08em] w-auto"
