@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X, Phone } from "lucide-react";
-import logoImage from "@/assets/quotemyfence-logo-new.webp";
+import arrowAsset from "@/assets/arrow_new.webp.asset.json";
 
 interface HeaderProps {
   onQuoteClick: () => void;
@@ -21,8 +21,28 @@ const Header = ({ onQuoteClick }: HeaderProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src={logoImage} alt="QuoteMyRetainingWall" className="h-10 md:h-11" />
+          <Link to="/" className="flex items-center" aria-label="QuoteMyRetainingWall">
+            <span
+              className="inline-flex items-center leading-none text-[2.25rem] md:text-[2.5rem]"
+              style={{ fontFamily: "Montserrat, Poppins, ui-sans-serif, system-ui, sans-serif" }}
+            >
+              <span className="flex items-baseline tracking-tight">
+                <span className="text-[#FF6A1C]" style={{ fontWeight: 700 }}>Quote</span>
+                <span
+                  className="text-[#666666] dark:text-[#D6D6D6]"
+                  style={{ fontWeight: 500, fontSize: "1em", transform: "translateY(0.03em)" }}
+                >
+                  My
+                </span>
+                <span className="text-[#333333] dark:text-white" style={{ fontWeight: 700 }}>Retaining Wall</span>
+              </span>
+              <img
+                src={arrowAsset.url}
+                alt=""
+                aria-hidden="true"
+                className="ml-[0.5cm] h-[1.08em] w-auto"
+              />
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
