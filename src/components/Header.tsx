@@ -23,7 +23,7 @@ const Header = ({ onQuoteClick }: HeaderProps) => {
           {/* Logo */}
           <Link to="/" className="flex items-center" aria-label="QuoteMyRetainingWall">
             <span
-              className="inline-flex items-center leading-none whitespace-nowrap text-[1.65rem] md:text-[2.5rem]"
+              className="inline-flex items-center leading-none whitespace-nowrap text-[26px] md:text-[30px]"
               style={{ fontFamily: "Montserrat, Poppins, ui-sans-serif, system-ui, sans-serif" }}
             >
               <span className="flex items-baseline tracking-tight">

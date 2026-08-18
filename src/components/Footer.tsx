@@ -79,11 +79,27 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 flex items-center justify-center">
-                  <img src={logoIcon} alt="QuoteMyRetainingWall" className="w-8 h-8 object-contain" />
-                </div>
-                <div className="text-xl font-bold">QuoteMyRetainingWall</div>
+              <div className="flex items-center mb-4">
+                <span
+                  className="inline-flex items-center leading-none whitespace-nowrap text-[26px]"
+                  style={{ fontFamily: "Montserrat, Poppins, ui-sans-serif, system-ui, sans-serif" }}
+                >
+                  <span className="flex items-baseline tracking-tight">
+                    <span style={{ fontWeight: 700, color: "#FF6A1C" }}>Quote</span>
+                    <span
+                      style={{ fontWeight: 500, fontSize: "1em", color: "#D6D6D6", transform: "translateY(0.03em)" }}
+                    >
+                      My
+                    </span>
+                    <span style={{ fontWeight: 700, color: "#FFFFFF" }}>Retaining Wall</span>
+                  </span>
+                  <img
+                    src="/arrow_new.webp"
+                    alt=""
+                    aria-hidden="true"
+                    className="ml-[0.5cm] h-[1.08em] w-auto"
+                  />
+                </span>
               </div>
               <p className="text-primary-foreground/80 text-sm">
                 Australia's leading platform for connecting homeowners with trusted retaining wall contractors.
