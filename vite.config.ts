@@ -11,7 +11,12 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean) as PluginOption[],
+  optimizeDeps: {
+    force: true,
+    include: ["react", "react-dom", "react-router", "react-router-dom", "react-helmet-async"],
+  },
   resolve: {
+    dedupe: ["react", "react-dom", "react-router", "react-router-dom"],
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
